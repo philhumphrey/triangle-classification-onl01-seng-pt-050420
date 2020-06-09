@@ -19,12 +19,12 @@ end
   def kind
     valid
     if side1 == side2 && side1 == side3 
-      return equilateral
+      return :equilateral
       elsif side1 == side2 || side2 == side3 || side1 == side3
-      return isosceles
+      return :isosceles
     else
       # side1 != side2 && side1 != side3 && side2 != side3
-      return scalene
+      return :scalene
     end
     end
 
